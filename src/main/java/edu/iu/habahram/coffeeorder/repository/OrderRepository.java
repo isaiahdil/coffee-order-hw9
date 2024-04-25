@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Scanner;
-
+//
 @Repository
 public class OrderRepository {
     public Receipt add(OrderData order) throws Exception {
