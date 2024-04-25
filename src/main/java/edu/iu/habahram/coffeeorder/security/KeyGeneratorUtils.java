@@ -1,9 +1,11 @@
 package edu.iu.habahram.coffeeorder.security;
 
+import org.springframework.stereotype.Component;
+
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
-import java.security.NoSuchAlgorithmException;
 
+@Component
 public class KeyGeneratorUtils {
     private KeyGeneratorUtils() {}
 
@@ -14,8 +16,8 @@ public class KeyGeneratorUtils {
                     KeyPairGenerator.getInstance("RSA");
             keyPairGenerator.initialize(2048);
             keyPair = keyPairGenerator.generateKeyPair();
-        } catch (Exception e) {
-            throw new IllegalStateException(e);
+        } catch (Exception ex) {
+            throw new IllegalStateException(ex);
         }
         return keyPair;
     }

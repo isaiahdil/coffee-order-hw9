@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://AMHvbwmuuHR1g4iQHqffVnio07ENndL6@dpg-cold3jmn7f5s73b605h0-a.oregon-postgres.render.com/postgresql_hw9
+    username: postgresql_hw9_user
+    password: AMHvbwmuuHR1g4iQHqffVnio07ENndL6
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  sql:
+    init:
+      mode: always
+
+
+
+
+
+
+
+
+
+
